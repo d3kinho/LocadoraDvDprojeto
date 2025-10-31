@@ -1,0 +1,178 @@
+:root {
+    --cor-fundo-body: #EBF4FF;
+    --cor-container: #FFFFFF;
+    --cor-sombra: rgba(0, 95, 184, 0.1);
+    --cor-titulo: #1C3879;
+    --cor-texto: #2C3E50;
+    --cor-link: #005FB8;
+    --cor-borda: #BCCCDC;
+    
+    --cor-botao-primario: #005FB8;
+    --cor-botao-hover: #004A94;
+    
+    --cor-nav-fundo: #F0F7FF;
+    --cor-nav-hover: #D6E8FF;
+    --cor-nav-texto: #005FB8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo-body);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 40 px auto;
+    padding: 40px 50px;
+    background-color: var(--cor-container);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--cor-sombra);
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--cor-titulo);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+a {
+    color: var(--cor-link);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--cor-titulo);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--cor-texto);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: var(--cor-link);
+    box-shadow: 0 0 5px rgba(0, 95, 184, 0.3);
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-botao-primario);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.msg-success {
+    text-align: center;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.msg-error {
+    text-align: center;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    padding: 14px;
+    margin-bottom: 12px;
+    background-color: var(--cor-nav-fundo);
+    border-radius: 5px;
+    color: var(--cor-nav-texto);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: var(--cor-nav-hover);
+    text-decoration: none;
+}
+
+.container-menu {
+    max-width: 800px;
+}
+
+.container-menu .nav a {
+    padding: 20px;
+    font-size: 22px;
+    margin-bottom: 17px;
+}
